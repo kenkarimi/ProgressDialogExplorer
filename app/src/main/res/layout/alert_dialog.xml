@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"> <!--Background color of this layout when it's inflated.
+     Background color of button row where positive & negative button sit still remains white unless entire AlertDialogs background color is set with its own style, even if both buttons omitted.(see Theme.AlertDialog)-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_gravity="center"
+        android:text="This is an ordinary alert dialog."
+        android:textSize="16sp"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/tvAlertDialogMessage"/>
+</LinearLayout>

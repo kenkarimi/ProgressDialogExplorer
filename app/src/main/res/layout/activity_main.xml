@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--ProgressBar: Use if simplicity and compatibility across older devices are crucial, or you don't need extensive customization
+        LinearProgressIndicator/CircularProgressIndicator: Use If you want a more modern look, better user experience, and advanced customization. Follows material design guidelines.
+    -->
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:indeterminate="true"
+        app:trackColor="@color/colorAccent"
+        app:indicatorColor="@color/colorRed"
+        android:visibility="gone"
+        android:id="@+id/indeterminateLinearProgressBar" />
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:indeterminate="true"
+        app:trackColor="@color/colorAccent"
+        app:indicatorColor="@color/colorRed"
+        android:visibility="gone"
+        android:id="@+id/indeterminateCircularProgressBar" />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorRed"
+        android:visibility="gone"
+        android:id="@+id/indeterminateProgressBar"/>
+</LinearLayout>

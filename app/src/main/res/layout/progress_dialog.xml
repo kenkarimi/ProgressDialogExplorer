@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorRed"> <!--Background color of this layout when it's inflated.
+     Background color of button row where positive & negative button sit still remains white unless entire AlertDialogs background color is set with its own style, even if both buttons omitted.(see Theme.AlertProgressDialog)-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
+        <!--ProgressBar: Use if simplicity and compatibility across older devices are crucial, or you don't need extensive customization
+            LinearProgressIndicator/CircularProgressIndicator: Use If you want a more modern look, better user experience, and advanced customization. Follows material design guidelines.
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="70">
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                app:trackColor="@color/colorRed"
+                app:indicatorColor="@color/colorWhite" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="30"
+            android:text="here..."
+            android:textSize="16sp"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/tvProgressDialogMessage" />
+    </LinearLayout>
+</LinearLayout>

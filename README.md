@@ -1,0 +1,1 @@
+The different variations of the progress dialog, starting with the deprecated ProgressDialog class, and how it can be replaced, the ProgressBar and its more recent alternatives; LinearProgressIndicator and CircularProgressIndicator that follow material design guidelines.
