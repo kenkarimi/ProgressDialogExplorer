@@ -18,12 +18,12 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_weight="70">
             <com.google.android.material.progressindicator.CircularProgressIndicator
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_gravity="center"
                 android:indeterminate="true"
                 app:trackColor="@color/colorRed"
                 app:indicatorColor="@color/colorWhite" />

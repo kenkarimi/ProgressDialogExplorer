@@ -27,7 +27,7 @@
 
     <!--If you're using an AlertDialog.Builder to create an alert dialog with both positive & negative buttons or one of the two buttons.-->
     <style name="Theme.AlertDialog" parent="Theme.MaterialComponents.Light.Dialog.Alert"> <!-- Previously Theme.AppCompat.Light.Dialog.Alert -->
-        <item name="android:background">@color/colorWhite</item> <!-- color of entire background including inflated progress_dialog xml file + button background(else entire row will be white in color) -->
+        <item name="android:background">@color/colorWhite</item> <!-- color of entire background including inflated alert_dialog xml file + button background(else entire row will be white in color) -->
     </style>
 
 </resources>

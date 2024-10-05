@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         builder.setCancelable(false);
 
         progressDialog2 = builder.create();
-        progressDialog2.show(); //Note: If you comment this out, you also have to comment out the lines below that set the button text color and textview.
+        progressDialog2.show(); //Note: If you comment this out, you also have to comment out the lines below that set the textview.
 
         tvProgressDialogMessage = (TextView) progressDialog2.findViewById(R.id.tvProgressDialogMessage);
         tvProgressDialogMessage.setText("Please wait...");
